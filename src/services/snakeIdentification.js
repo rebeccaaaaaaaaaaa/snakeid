@@ -12,9 +12,9 @@ const AI_CONFIG = {
 }
 
 // Debug das configurações
-console.log('🔧 Configurações carregadas:')
-console.log('- OpenAI API Key:', AI_CONFIG.OPENAI_API_KEY ? '✅ Configurada (PADRÃO)' : '❌ Não configurada')
-console.log('- Google Vision API Key:', AI_CONFIG.GOOGLE_VISION_API_KEY ? '✅ Configurada (BACKUP)' : '❌ Não configurada')
+console.log('Configurações carregadas:')
+console.log('- OpenAI API Key:', AI_CONFIG.OPENAI_API_KEY ? 'Configurada (PADRÃO)' : 'Não configurada')
+console.log('- Google Vision API Key:', AI_CONFIG.GOOGLE_VISION_API_KEY ? 'Configurada (BACKUP)' : 'Não configurada')
 console.log('- Use Mock Data:', AI_CONFIG.USE_MOCK_DATA)
 
 // Dados simulados para desenvolvimento
@@ -108,51 +108,51 @@ const mockSnakeData = [
 
 // Função principal de identificação que escolhe a melhor API disponível
 export const identifySnake = async (imageFile) => {
-  console.log('🐍 Iniciando identificação de serpente...')
-  console.log('📁 Arquivo:', imageFile.name, 'Tamanho:', imageFile.size)
+  console.log('Iniciando identificação de serpente...')
+  console.log('Arquivo:', imageFile.name, 'Tamanho:', imageFile.size)
   
   // Se estiver usando dados simulados
   if (AI_CONFIG.USE_MOCK_DATA) {
-    console.log('⚠️  Usando dados simulados (VITE_USE_MOCK_DATA=true)')
+    console.log('Usando dados simulados (VITE_USE_MOCK_DATA=true)')
     return identifySnakeWithMockData(imageFile)
   }
 
-  console.log('🤖 Tentando identificação com APIs reais...')
+  console.log('Tentando identificação com APIs reais...')
 
   // Tentar identificação com APIs reais em ordem de preferência
   try {
     // 1. Tentar OpenAI Vision (melhor para identificação detalhada)
     if (AI_CONFIG.OPENAI_API_KEY) {
-      console.log('🧠 Tentando identificação com OpenAI Vision...')
+      console.log('Tentando identificação com OpenAI Vision...')
       const openaiIdentifier = new OpenAIVisionSnakeIdentifier(AI_CONFIG.OPENAI_API_KEY)
       const result = await openaiIdentifier.identifySnake(imageFile)
-      console.log('✅ OpenAI Success:', result.species)
+      console.log('OpenAI Success:', result.species)
       return result
     } else {
-      console.log('❌ OpenAI API key não configurada')
+      console.log('OpenAI API key não configurada')
     }
 
     // 2. Tentar Google Vision (boa para detecção geral)
     if (AI_CONFIG.GOOGLE_VISION_API_KEY) {
-      console.log('👁️  Tentando identificação com Google Vision...')
+      console.log('Tentando identificação com Google Vision...')
       const googleIdentifier = new GoogleVisionSnakeIdentifier(AI_CONFIG.GOOGLE_VISION_API_KEY)
       const result = await googleIdentifier.identifySnake(imageFile)
-      console.log('✅ Google Vision Success:', result.species)
+      console.log('Google Vision Success:', result.species)
       return result
     } else {
-      console.log('❌ Google Vision API key não configurada')
+      console.log('Google Vision API key não configurada')
     }
 
     // 3. Usar iNaturalist (gratuito, mas menos preciso)
-    console.log('🌿 Tentando identificação com iNaturalist...')
+    console.log('Tentando identificação com iNaturalist...')
     const inatIdentifier = new iNaturalistSnakeIdentifier()
     const result = await inatIdentifier.identifySnake(imageFile)
-    console.log('✅ iNaturalist Success:', result.species)
+    console.log('iNaturalist Success:', result.species)
     return result
 
   } catch (error) {
-    console.error('❌ Erro em todas as APIs:', error.message)
-    console.log('🔄 Usando dados simulados como fallback...')
+    console.error('Erro em todas as APIs:', error.message)
+    console.log('Usando dados simulados como fallback...')
     return identifySnakeWithMockData(imageFile)
   }
 }

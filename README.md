@@ -1,19 +1,19 @@
-# 🐍 Snake ID - Identificação de Serpentes com IA
+# Snake ID - Identificação de Serpentes com IA
 
 Uma aplicação web moderna para identificação de serpentes através de fotos, utilizando inteligência artificial. Built with Vite + React + Tailwind CSS.
 
 ![Snake ID Demo](https://via.placeholder.com/800x400/22c55e/ffffff?text=Snake+ID+App)
 
-## ✨ Funcionalidades
+## Funcionalidades
 
-- 📸 **Upload de Imagens**: Interface drag-and-drop intuitiva para envio de fotos
-- 🤖 **Identificação com IA**: Análise automática das imagens para identificar espécies
-- 📊 **Resultados Detalhados**: Informações completas sobre a serpente identificada
-- ⚠️ **Alertas de Segurança**: Identificação de serpentes venenosas com instruções de primeiros socorros
-- 📱 **Design Responsivo**: Interface otimizada para desktop e mobile
-- 🎨 **UI Moderna**: Design limpo e intuitivo com Tailwind CSS
+- **Upload de Imagens**: Interface drag-and-drop intuitiva para envio de fotos
+- **Identificação com IA**: Análise automática das imagens para identificar espécies
+- **Resultados Detalhados**: Informações completas sobre a serpente identificada
+- **Alertas de Segurança**: Identificação de serpentes venenosas com instruções de primeiros socorros
+- **Design Responsivo**: Interface otimizada para desktop e mobile
+- **UI Moderna**: Design limpo e intuitivo com Tailwind CSS
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Frontend**: React 18 + Vite
 - **Styling**: Tailwind CSS
@@ -21,7 +21,7 @@ Uma aplicação web moderna para identificação de serpentes através de fotos,
 - **File Upload**: React Dropzone
 - **Build Tool**: Vite
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 
@@ -57,7 +57,7 @@ npm run preview  # Preview do build de produção
 npm run lint     # Executa linting do código
 ```
 
-## 📱 Como Usar
+## Como Usar
 
 1. **Faça Upload da Imagem**:
    - Arraste e solte uma foto de serpente na área indicada
@@ -72,7 +72,7 @@ npm run lint     # Executa linting do código
    - Confira informações detalhadas sobre habitat, tamanho e características
    - Para serpentes venenosas, consulte as instruções de primeiros socorros
 
-## 🔧 Configuração de IA (Futura)
+## Configuração de IA (Futura)
 
 Para integrar com serviços de IA reais, configure as variáveis de ambiente:
 
@@ -87,7 +87,7 @@ Para integrar com serviços de IA reais, configure as variáveis de ambiente:
    REACT_APP_AI_API_URL=https://api.seu-servico-de-ia.com
    ```
 
-## 🏗️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 snakeId/
@@ -109,9 +109,9 @@ snakeId/
 └── README.md
 ```
 
-## 🤖 Integração com IA
+## Integração com IA
 
-### 🎯 **APIs Disponíveis**
+### **APIs Disponíveis**
 
 1. **🥇 OpenAI GPT-4 Vision** (Recomendado)
    - Melhor precisão para identificação
@@ -128,10 +128,10 @@ snakeId/
    - Base científica real
    - Identificação por características
 
-### 🚀 **Como Ativar IA Real**
+### **Como Ativar IA Real**
 
 #### Opção 1: Interface da Aplicação
-1. Clique no ícone ⚙️ (configurações) no canto inferior direito
+1. Clique no ícone de configurações no canto inferior direito
 2. Configure suas chaves de API
 3. Teste a conectividade
 4. Desative "usar dados simulados"
@@ -149,7 +149,7 @@ snakeId/
 ### 📋 **Guia Completo**
 Veja o arquivo [SETUP_AI_APIS.md](SETUP_AI_APIS.md) para instruções detalhadas de como obter e configurar cada API.
 
-### 💡 **Funcionalidades Avançadas**
+### **Funcionalidades Avançadas**
 
 ```javascript
 // Usar múltiplas APIs para consenso
@@ -162,11 +162,11 @@ import { identifySnakeWithAPI } from './services/snakeIdentification'
 import { testAPIConnectivity } from './services/snakeIdentification'
 ```
 
-## ⚠️ Importante
+## Importante
 
 > **Disclaimer**: Esta aplicação é para fins educacionais e de demonstração. A identificação atual é simulada. Para identificação real de serpentes, sempre consulte especialistas em herpetologia. Em caso de acidentes com serpentes, procure atendimento médico imediatamente.
 
-## 🔒 Primeiros Socorros
+## Primeiros Socorros
 
 A aplicação fornece instruções básicas de primeiros socorros para casos de mordidas de serpentes venenosas:
 
@@ -194,4 +194,4 @@ Para dúvidas ou sugestões sobre o projeto, abra uma issue no repositório.
 
 ---
 
-**Snake ID** - Desenvolvido com ❤️ para educação e conscientização sobre serpentes brasileiras.
+**Snake ID** - Desenvolvido com carinho para educação e conscientização sobre serpentes brasileiras.

@@ -8,7 +8,7 @@ const DebugInfo = ({ result, debugData }) => {
     <div className="card border-l-4 border-blue-500 bg-blue-50">
       <h3 className="text-lg font-semibold text-blue-900 mb-3 flex items-center">
         <Info className="w-5 h-5 mr-2" />
-        🔍 Informações de Debug
+        Informações de Debug
       </h3>
       
       <div className="space-y-3 text-sm">
@@ -85,7 +85,7 @@ const DebugInfo = ({ result, debugData }) => {
       </div>
 
       <div className="mt-3 p-2 bg-yellow-100 rounded text-xs text-yellow-800">
-        💡 <strong>Dica:</strong> Para melhor precisão, use imagens com boa iluminação e foque nas características distintivas da serpente (chocalho, padrões, formato da cabeça).
+        <strong>Dica:</strong> Para melhor precisão, use imagens com boa iluminação e foque nas características distintivas da serpente (chocalho, padrões, formato da cabeça).
       </div>
     </div>
   )

@@ -119,7 +119,7 @@ const IdentificationResult = ({ result }) => {
         <div className="card border-l-4 border-red-500 bg-red-50">
           <h3 className="text-lg font-semibold text-red-900 mb-3 flex items-center">
             <AlertTriangle className="w-5 h-5 mr-2" />
-            ⚠️ Primeiros Socorros em Caso de Mordida
+            Primeiros Socorros em Caso de Mordida
           </h3>
           <div className="text-red-800 space-y-2">
             {firstAid.map((instruction, index) => (

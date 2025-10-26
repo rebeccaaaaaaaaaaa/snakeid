@@ -26,13 +26,13 @@ function App() {
       const imageUrl = URL.createObjectURL(file)
       setUploadedImage(imageUrl)
       
-      console.log('🚀 Iniciando identificação...')
+      console.log('Iniciando identificação...')
       
       // Identificar a serpente
       const result = await identifySnake(file)
       const processingTime = Date.now() - startTime
       
-      console.log('✅ Resultado da identificação:', result)
+      console.log('Resultado da identificação:', result)
       
       setIdentificationResult(result)
       setDebugData({
@@ -45,7 +45,7 @@ function App() {
       
     } catch (err) {
       setError('Erro ao identificar a serpente. Tente novamente.')
-      console.error('❌ Erro na identificação:', err)
+      console.error('Erro na identificação:', err)
     } finally {
       setLoading(false)
     }

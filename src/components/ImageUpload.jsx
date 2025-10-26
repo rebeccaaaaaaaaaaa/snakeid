@@ -96,7 +96,7 @@ const ImageUpload = ({ onImageUpload }) => {
       )}
 
       <div className="mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-        <h3 className="font-medium text-blue-900 mb-2">💡 Dicas para melhor identificação:</h3>
+        <h3 className="font-medium text-blue-900 mb-2">Dicas para melhor identificação:</h3>
         <ul className="text-sm text-blue-800 space-y-1">
           <li>• Use fotos com boa iluminação e foco</li>
           <li>• Mostre o corpo todo da serpente, se possível</li>

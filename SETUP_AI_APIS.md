@@ -1,8 +1,8 @@
-# 🤖 Guia de Integração com APIs de IA
+# Guia de Integração com APIs de IA
 
 Este guia explica como configurar diferentes APIs de IA para fazer a identificação de serpentes funcionar de verdade.
 
-## 🎯 Opções Disponíveis
+## Opções Disponíveis
 
 ### 1. 🥇 OpenAI GPT-4 Vision (Recomendado)
 **Prós:**
@@ -91,10 +91,10 @@ Este guia explica como configurar diferentes APIs de IA para fazer a identifica�
 
 ---
 
-## 🛠️ Configuração Rápida
+## Configuração Rápida
 
 ### Opção 1: Interface da Aplicação
-1. Clique no ícone ⚙️ no canto inferior direito
+1. Clique no ícone de configurações no canto inferior direito
 2. Configure suas chaves de API
 3. Teste a conectividade
 4. Desative "usar dados simulados"
@@ -111,7 +111,7 @@ Este guia explica como configurar diferentes APIs de IA para fazer a identifica�
 
 ---
 
-## 🔧 Configuração Avançada
+## Configuração Avançada
 
 ### Múltiplas APIs (Consenso)
 ```javascript
@@ -142,7 +142,7 @@ configureAPIs({
 
 ---
 
-## 🚀 Implementação Customizada
+## Implementação Customizada
 
 ### Adicionando Nova API
 
@@ -179,31 +179,31 @@ if (AI_CONFIG.NOVA_API_KEY) {
 
 ---
 
-## 📊 Comparação de APIs
+## Comparação de APIs
 
 | API | Precisão | Custo | Configuração | Velocidade |
 |-----|----------|-------|--------------|------------|
-| OpenAI Vision | ⭐⭐⭐⭐⭐ | 💰💰 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ |
-| Google Vision | ⭐⭐⭐⭐ | 💰 | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ |
-| iNaturalist | ⭐⭐⭐ | 💰 (Grátis) | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ |
+| OpenAI Vision | 5/5 | Médio | 4/5 | 4/5 |
+| Google Vision | 4/5 | Baixo | 3/5 | 5/5 |
+| iNaturalist | 3/5 | Grátis | 5/5 | 3/5 |
 
 ---
 
-## 🔒 Segurança
+## Segurança
 
 ### Boas Práticas:
-- ✅ Nunca commit chaves de API no código
-- ✅ Use variáveis de ambiente
-- ✅ Configure limites de uso
-- ✅ Monitor logs para uso suspeito
-- ✅ Rotacione chaves periodicamente
+- Nunca commit chaves de API no código
+- Use variáveis de ambiente
+- Configure limites de uso
+- Monitor logs para uso suspeito
+- Rotacione chaves periodicamente
 
 ### Proteção das Chaves:
 ```javascript
-// ❌ NUNCA faça isso:
+// NUNCA faça isso:
 const API_KEY = "sk-chave-secreta-aqui"
 
-// ✅ Sempre use variáveis de ambiente:
+// Sempre use variáveis de ambiente:
 const API_KEY = import.meta.env.VITE_OPENAI_API_KEY
 ```
 
@@ -214,23 +214,23 @@ const API_KEY = import.meta.env.VITE_OPENAI_API_KEY
 ### Erros Comuns:
 
 **"API key não configurada"**
-- ✅ Verificar se a chave está no `.env`
-- ✅ Reiniciar a aplicação
-- ✅ Verificar se a chave tem o prefixo correto
+- Verificar se a chave está no `.env`
+- Reiniciar a aplicação
+- Verificar se a chave tem o prefixo correto
 
 **"Rate limit exceeded"**
-- ✅ Aguardar alguns minutos
-- ✅ Verificar limites na conta da API
-- ✅ Implementar retry com backoff
+- Aguardar alguns minutos
+- Verificar limites na conta da API
+- Implementar retry com backoff
 
 **"Insufficient credits"**
-- ✅ Adicionar créditos na conta
-- ✅ Verificar método de pagamento
+- Adicionar créditos na conta
+- Verificar método de pagamento
 
 **"Imagem não identificada"**
-- ✅ Usar imagem mais clara
-- ✅ Tentar com múltiplas APIs
-- ✅ Verificar se é realmente uma serpente
+- Usar imagem mais clara
+- Tentar com múltiplas APIs
+- Verificar se é realmente uma serpente
 
 ---
 
@@ -262,7 +262,7 @@ const API_KEY = import.meta.env.VITE_OPENAI_API_KEY
 
 ---
 
-## 💡 Próximos Passos
+## Próximos Passos
 
 1. **Escolher uma API** e configurar
 2. **Testar com imagens reais**
@@ -271,4 +271,4 @@ const API_KEY = import.meta.env.VITE_OPENAI_API_KEY
 5. **Adicionar feedback** dos usuários
 6. **Treinar modelo customizado** se necessário
 
-O sistema já está preparado para todas essas integrações! 🚀
+O sistema já está preparado para todas essas integrações!
