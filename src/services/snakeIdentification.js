@@ -5,16 +5,16 @@ import { iNaturalistSnakeIdentifier } from './inaturalistAPI.js'
 
 // Configuração das APIs (use suas próprias chaves)
 const AI_CONFIG = {
-  // Descomente e configure suas chaves de API
+  // Chaves de API configuradas
   GOOGLE_VISION_API_KEY: import.meta.env.VITE_GOOGLE_VISION_API_KEY,
   OPENAI_API_KEY: import.meta.env.VITE_OPENAI_API_KEY,
-  USE_MOCK_DATA: import.meta.env.VITE_USE_MOCK_DATA === 'true'
+  USE_MOCK_DATA: import.meta.env.VITE_USE_MOCK_DATA === 'true' || false // Default: usar APIs reais
 }
 
 // Debug das configurações
 console.log('🔧 Configurações carregadas:')
-console.log('- OpenAI API Key:', AI_CONFIG.OPENAI_API_KEY ? '✅ Configurada' : '❌ Não configurada')
-console.log('- Google Vision API Key:', AI_CONFIG.GOOGLE_VISION_API_KEY ? '✅ Configurada' : '❌ Não configurada')
+console.log('- OpenAI API Key:', AI_CONFIG.OPENAI_API_KEY ? '✅ Configurada (PADRÃO)' : '❌ Não configurada')
+console.log('- Google Vision API Key:', AI_CONFIG.GOOGLE_VISION_API_KEY ? '✅ Configurada (BACKUP)' : '❌ Não configurada')
 console.log('- Use Mock Data:', AI_CONFIG.USE_MOCK_DATA)
 
 // Dados simulados para desenvolvimento

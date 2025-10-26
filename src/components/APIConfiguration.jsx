@@ -7,7 +7,7 @@ const APIConfiguration = ({ onConfigurationChange }) => {
   const [config, setConfig] = useState({
     openaiApiKey: '',
     googleVisionApiKey: '',
-    useMockData: true
+    useMockData: false // Padrão: usar APIs reais
   })
   const [showKeys, setShowKeys] = useState({
     openai: false,
