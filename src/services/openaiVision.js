@@ -75,7 +75,7 @@ export class OpenAIVisionSnakeIdentifier {
           'Authorization': `Bearer ${this.apiKey}`
         },
         body: JSON.stringify({
-          model: "gpt-4-vision-preview",
+          model: "gpt-4o",
           messages: messages,
           max_tokens: 1000,
           temperature: 0.3
